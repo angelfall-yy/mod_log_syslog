@@ -3,17 +3,18 @@ Mod log syslog
 
 `mod_log_syslog` is an Apache module to send access logs to syslog or to udp url
 
-Usage:
+Usage
+------------
 
     CustomLog syslog:<facility>:<priority>:ip:port:ident  <format>
     CustomLog syslog:<facility>:<priority>:/dev/log:Apache  <format>
 
-Examples:
-
+Examples
+------------
     CustomLog syslog:local1:info:127.0.0.1:514:Apache combined
 
     <VirtualHost *:80>
-    CustomLog syslog:local2:debug:/dev/log/Apache common
+    CustomLog syslog:local2:debug:/dev/log:SLOG common
     </VirtualHost>
 
 Possible facilities: `local[0-7]` and `user`
