@@ -20,6 +20,7 @@ Possible facilities: `local[0-7]` and `user`
 Possible priorities: `debug`, `info`, `notice`, `warning`, `err`, `crit`, `alert`, and `emerg`
 
 Possible syslog format:
+
     syslog:user:info:127.0.0.1:514:ident
     syslog:user:info:/dev/log:ident
     syslog:user:info:127.0.0.1::ident
